@@ -19,7 +19,10 @@ body {
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
-  font-kerning: normal; }
+  font-kerning: normal;
+  background: linear-gradient(135deg, #ECEDDC 5%, transparent 5%) -50px 0, linear-gradient(225deg, #ECEDDC 5%, transparent 5%) -50px 0, linear-gradient(315deg, #ECEDDC 5%, transparent 5%), linear-gradient(45deg, #ECEDDC 5%, transparent 5%);
+  background-size: 120px 98px;
+  background-color: #EC173A; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -153,6 +156,7 @@ pre {
  * Site header
  */
 .fullhouse {
+  margin-top: 50px;
   background: url(/assets/postcard.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 500px;
@@ -192,6 +196,29 @@ pre {
 .text {
   color: #000;
   font-weight: bold; }
+
+.hasymonew {
+  margin-top: 100px;
+  background: linear-gradient(53deg, #FF262C 23%, transparent 23%) 7px 0, linear-gradient(30deg, transparent 74%, #6EEE00 78%), linear-gradient(63deg, transparent 34%, #ECFF5E 38%, #74DEFF 58%, transparent 62%), #FFEB48;
+  background-size: 20px 50px;
+  padding: 50px; }
+  .hasymonew img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block; }
+  .hasymonew h3 {
+    text-align: center; }
+  .hasymonew a {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid pink;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #000; }
+    .hasymonew a:hover {
+      background-color: #fdff00;
+      color: red; }
 
 .youtube {
   width: 100%;
@@ -275,7 +302,6 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
   padding: 30px 0;
   background-color: #000;
   transform: rotate(5deg);
