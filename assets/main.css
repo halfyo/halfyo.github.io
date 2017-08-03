@@ -19,10 +19,7 @@ body {
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  background: linear-gradient(135deg, #ECEDDC 5%, transparent 5%) -50px 0, linear-gradient(225deg, #ECEDDC 5%, transparent 5%) -50px 0, linear-gradient(315deg, #ECEDDC 5%, transparent 5%), linear-gradient(45deg, #ECEDDC 5%, transparent 5%);
-  background-size: 120px 98px;
-  background-color: #EC173A; }
+  font-kerning: normal; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -166,36 +163,23 @@ pre {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
-  background-color: #a4fff3;
   position: relative; }
 
 .show-info {
   padding: 30px;
-  background-color: rgba(164, 255, 243, 0.7);
+  background-color: rgba(0, 227, 141, 0.7);
   text-align: center;
   box-sizing: border-box;
-  transform: rotate(7deg);
   z-index: 3;
-  position: relative; }
+  position: relative;
+  height: 100%; }
   @media screen and (max-width: 648px) {
     .show-info {
       margin-top: 10px; } }
 
-.show-info-curtain {
-  padding: 30px;
-  background-color: rgba(255, 90, 0, 0.7);
-  text-align: center;
-  box-sizing: border-box;
-  transform: rotate(-5deg);
-  z-index: 2;
-  position: relative; }
-  @media screen and (max-width: 648px) {
-    .show-info-curtain {
-      margin-top: 10px; } }
-
 .text {
   color: #000;
-  font-weight: bold; }
+  font-weight: 300; }
 
 .hb {
   width: 100%;
@@ -205,8 +189,6 @@ pre {
 
 .hasymonew {
   margin-top: 100px;
-  background: linear-gradient(53deg, #FF262C 23%, transparent 23%) 7px 0, linear-gradient(30deg, transparent 74%, #6EEE00 78%), linear-gradient(63deg, transparent 34%, #ECFF5E 38%, #74DEFF 58%, transparent 62%), #FFEB48;
-  background-size: 20px 50px;
   padding: 50px; }
   .hasymonew img {
     width: 100%;
@@ -216,15 +198,17 @@ pre {
   .hasymonew h3 {
     text-align: center; }
   .hasymonew a {
+    display: block;
+    margin: 0 auto;
     text-align: center;
-    padding: 20px;
-    border: 1px solid pink;
+    width: 150px;
+    padding: 15px;
+    border: 1px solid #fdff00;
     background-color: #fff;
     border-radius: 50px;
     color: #000; }
     .hasymonew a:hover {
-      background-color: #fdff00;
-      color: red; }
+      background-color: #fdff00; }
 
 .youtube {
   width: 100%;
@@ -239,6 +223,9 @@ pre {
   margin-bottom: 0;
   float: left;
   color: #000; }
+  .site-title img {
+    width: 150px;
+    height: auto; }
 
 .site-nav {
   float: right;
@@ -250,19 +237,21 @@ pre {
     display: none; }
   .site-nav .page-link {
     color: #000;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 10px; }
     .site-nav .page-link:hover {
+      color: #fff;
       transition: 0.5s;
-      color: #fff; }
+      background-color: #00E38D; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
       top: 9px;
+      background-color: #fff;
       right: 15px;
-      background: #00ff6b;
-      border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: right; }
       .site-nav label[for="nav-trigger"] {
@@ -281,7 +270,7 @@ pre {
         padding-top: 10px;
         text-align: center; }
         .site-nav .menu-icon > svg path {
-          fill: #fff; }
+          fill: #222; }
       .site-nav input ~ .trigger {
         clear: both;
         display: none; }
@@ -291,7 +280,7 @@ pre {
       .site-nav .page-link {
         display: block;
         padding: 5px 10px;
-        color: #fff;
+        color: #222;
         margin-left: 20px; }
         .site-nav .page-link:hover {
           transition: 0.5s;
