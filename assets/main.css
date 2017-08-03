@@ -197,6 +197,12 @@ pre {
   color: #000;
   font-weight: bold; }
 
+.hb {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block; }
+
 .hasymonew {
   margin-top: 100px;
   background: linear-gradient(53deg, #FF262C 23%, transparent 23%) 7px 0, linear-gradient(30deg, transparent 74%, #6EEE00 78%), linear-gradient(63deg, transparent 34%, #ECFF5E 38%, #74DEFF 58%, transparent 62%), #FFEB48;
