@@ -149,12 +149,54 @@ pre {
 .social-media-list li + li {
   padding-top: 5px; }
 
+.sticky {
+  position: fixed;
+  width: 220px;
+  left: 0;
+  top: 50px;
+  z-index: 100;
+  border-top: 0;
+  background-color: #fff; }
+  .sticky .page-link {
+    display: block;
+    margin-right: 0 !important; }
+  .sticky .site-title {
+    float: none; }
+    .sticky .site-title img {
+      display: block; }
+
+.draw {
+  transition: color 0.25s; }
+  .draw::before, .draw::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0; }
+  .draw::before {
+    top: 0;
+    left: 0; }
+  .draw::after {
+    bottom: 0;
+    right: 0; }
+  .draw:hover {
+    color: blue; }
+  .draw:hover::before, .draw:hover::after {
+    width: 100%;
+    height: 100%; }
+  .draw:hover::before {
+    border-top-color: blue;
+    border-right-color: blue;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+  .draw:hover::after {
+    border-bottom-color: blue;
+    border-left-color: blue;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+
 /**
  * Site header
  */
 .fullhouse {
   margin-top: 50px;
-  background: url(/assets/postcard.jpg) no-repeat center center fixed;
+  background: url(/assets/sasa.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 500px;
   width: 100%; }
@@ -196,18 +238,20 @@ pre {
     display: block; }
   .hasymonew h3 {
     text-align: center; }
-  .hasymonew a {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    width: 150px;
-    padding: 15px;
-    border: 1px solid #fdff00;
-    background-color: #fff;
-    border-radius: 50px;
-    color: #000; }
-    .hasymonew a:hover {
-      background-color: #fdff00; }
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 150px;
+  padding: 15px;
+  border: 1px solid #00E38D;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #000; }
+  .btn:hover {
+    background-color: #00E38D;
+    color: #fff; }
 
 .youtube {
   width: 100%;
@@ -224,10 +268,10 @@ pre {
   color: #000; }
   .site-title img {
     width: 150px;
-    height: auto; }
+    height: auto;
+    margin-right: 50px; }
 
 .site-nav {
-  float: right;
   line-height: 54px;
   z-index: 5; }
   .site-nav .nav-trigger {
