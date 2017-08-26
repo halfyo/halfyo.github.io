@@ -229,15 +229,13 @@ pre {
   margin: 0 auto;
   display: block; }
 
-.hasymonew {
-  margin-top: 100px; }
-  .hasymonew img {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    display: block; }
-  .hasymonew h3 {
-    text-align: center; }
+.hasymonew img {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block; }
+.hasymonew h3 {
+  text-align: center; }
 
 .btn {
   display: block;
