@@ -150,10 +150,13 @@ pre {
 .social-media-list li + li {
   padding-top: 5px; }
 
+.clear {
+  clear: both; }
+
 .sticky {
   position: fixed;
   width: 220px;
-  left: 0;
+  right: 0;
   top: 50px;
   z-index: 100;
   border-top: 0;
@@ -581,3 +584,16 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.le span {
+  background-color: #FFA500;
+  padding: 15px;
+  color: #fff; }
+.le .venue {
+  margin: 15px 0; }
+.le div {
+  clear: both;
+  content: ""; }
+.le .sdp {
+  font-size: 12px;
+  float: right; }
