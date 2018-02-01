@@ -605,4 +605,5 @@ div iframe {
   margin: 30px 0; }
 
 .p-pic {
-  max-width: 600px; }
+  width: 600px;
+  max-width: 100%; }
