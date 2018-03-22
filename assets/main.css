@@ -67,10 +67,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #222;
+  color: #e73131;
   text-decoration: none; }
   a:hover {
-    color: #fff;
+    color: #ddd;
     transition: 0.5s; }
   .social-media-list a:hover {
     text-decoration: none; }
@@ -607,3 +607,6 @@ div iframe {
 .p-pic {
   width: 600px;
   max-width: 100%; }
+
+.venue {
+  font-weight: 500; }
